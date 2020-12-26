@@ -1,5 +1,3 @@
-/* @import url("modalwindow.css"); */
-
 :root {
   --color-primary: #575757;
   --color-primary-ligth: #000000;
@@ -276,6 +274,7 @@
   font-size: 2rem;
   max-width: 30rem;
   padding: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /*  */
