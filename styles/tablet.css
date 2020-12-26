@@ -1,0 +1,24 @@
+@media (max-width: 1279px) {
+  .container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  /* HEADER */
+  .header {
+    position: fixed;
+  }
+
+   /* FOOTER */
+  .footer__inner {
+    padding-top: 3rem;
+  }
+
+  .footer__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+}

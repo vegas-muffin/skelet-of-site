@@ -1,0 +1,154 @@
+@media (min-width: 320px) and (max-width: 767px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* HEADER */
+  .header__nav {
+    display: none;
+  }
+
+  /* BURGER */
+  /* burger Logo */
+  .nav__links-wrapper {
+    position: relative;
+  }
+
+  .nav__links-logo {
+    position: absolute;
+
+    height: 6rem;
+    width: 18.6rem;
+  }
+
+  .header__menu-btn {
+    position: absolute;
+    height: 3rem;
+    width: 3rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    margin-right: 4.3rem;
+    padding: 0;
+    background: transparent;
+    z-index: 4;
+  }
+
+  .menu-btn__burger {
+    position: absolute;
+    top: 1.5rem;
+    right: 0;
+    width: 3rem;
+    height: 0.2rem;
+    background: var(--color-primary);
+    box-shadow: 0 0.2rem 0.5rem rgb(241, 205, 179, 0.2);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .menu-btn__burger::before,
+  .menu-btn__burger::after {
+    content: "";
+    top: 0 rem;
+    position: absolute;
+    width: 3rem;
+    height: 0.2rem;
+    background: var(--color-primary);
+    box-shadow: 0 0.2rem 0.5rem rgba(255, 101, 47, 0.2);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .menu-btn__burger::before {
+    transform: translateY(-1rem);
+  }
+
+  .menu-btn__burger::after {
+    transform: translateY(1rem);
+  }
+
+  /* Animation Burger */
+  .menu-btn_open {
+    transform: rotate(90deg);
+  }
+
+  /* NEW SIDEBAR */
+  .sidebar-modal {
+    position: relative;
+  }
+
+  .sidebar-modal-main_visible {
+    display: block;
+  }
+
+  .sidebar-modal__logo {
+    position: absolute;
+    top: 3rem;
+    left: 1rem;
+  }
+
+  .sidebar-modal__overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(41, 41, 41, 0.6);
+    height: 100vh;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .sidebar-modal__window {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    width: 32rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sidebar-modal__overlay_visible {
+    opacity: 1;
+    visibility: visible;
+    transition: right ease 3s;
+  }
+
+  .sidebar-modal_visible {
+    display: flex;
+    transition: right ease 3s;
+  }
+
+  /* MAIN INNER */
+  .main__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* FOOTER */
+
+  .footer__item1 {
+    padding-bottom: 4rem;
+    align-items: center;
+  }
+
+  .footer__inner {
+    padding-top: 2.9rem;
+  }
+
+  .footer__wrapper {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
